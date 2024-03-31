@@ -1,21 +1,24 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <nav className="deep-yellow darken-2">
       <div className="nav-wrapper">
         <div className="row">
           <div className="col s6">
-            <a href="#" className="brand-logo">
+            <Link to="/" className="brand-logo">
               Shop
-            </a>
+            </Link>
           </div>
           <div className="col s6" style={{ textAlign: "right" }}>
-            <a
-              href="https://github.com/Vladusick/project-shop-react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Repo
-            </a>
+            <ul>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/contacts">Contacts</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
