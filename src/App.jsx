@@ -6,7 +6,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
-import { Movie } from "./pages/Movie";
+import { Category } from "./pages/Category";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             </Route>
             <Route path="/about" Component={About} />
             <Route path="/contacts" Component={Contact} />
-            <Route path="/movies/:title" Component={Movie} />
+            <Route path="/category/:name" Component={Category} />
             <Route path="*" Component={NotFound} />
           </Routes>
         </main>
