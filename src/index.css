@@ -30,3 +30,14 @@ nav {
 .cart-content {
   flex-grow: 1;
 }
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  width: 600px;
+  height: 350px;
+}
+
+/* к айфрейму надо добавить чтобы на мобиле видео выглядело нормально */
