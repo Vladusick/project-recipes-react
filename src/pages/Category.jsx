@@ -4,16 +4,26 @@ import { useEffect, useState } from "react";
 import { Preloader } from "../components/Preloader";
 
 import { MealList } from "../components/MealList";
+import { useNavigate } from "react-router-dom";
 
 function Category() {
   const { name } = useParams();
   const [meals, setMeals] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     getFilteredCategory(name).then((data) => setMeals(data.meals));
   }, [name]);
 
-  return <>{!meals.length ? <Preloader /> : <MealList meals={meals} />}</>;
+  return (
+    <>
+      <button className="btn" onClick={() => navigate(-1)}>
+        Go Back
+      </button>
+
+      {!meals.length ? <Preloader /> : <MealList meals={meals} />}
+    </>
+  );
 }
 
 export { Category };
