@@ -40,4 +40,8 @@ iframe {
   height: 350px;
 }
 
-/* к айфрейму надо добавить чтобы на мобиле видео выглядело нормально */
+@media (max-width: 767px) {
+  .video {
+    display: none;
+  }
+}

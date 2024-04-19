@@ -2,23 +2,22 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <nav className="deep-yellow darken-2">
+    <nav className="green darken-1">
       <div className="nav-wrapper">
         <div className="row">
           <div className="col s6">
             <Link to="/" className="brand-logo">
-              Shop
+              Recipes
             </Link>
           </div>
           <div className="col s6" style={{ textAlign: "right" }}>
-            <ul>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/contacts">Contacts</Link>
-              </li>
-            </ul>
+            <a
+              href="https://github.com/Vladusick/project-recipes-react"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repo
+            </a>
           </div>
         </div>
       </div>

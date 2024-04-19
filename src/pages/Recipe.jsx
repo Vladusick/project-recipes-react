@@ -46,7 +46,7 @@ function Recipe() {
           </table>
 
           {recipe.strYoutube ? (
-            <div className="row">
+            <div className="video">
               <h5 style={{ mergin: "2rem 0 1.5rem" }}> Video Recipe</h5>
               <iframe
                 title={id}
